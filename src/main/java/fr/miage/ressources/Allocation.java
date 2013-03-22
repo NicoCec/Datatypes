@@ -1,0 +1,27 @@
+package fr.miage.ressources;
+
+public class Allocation {
+	private String myName; 
+        private TypeRessource type;
+
+    public TypeRessource getType() {
+        return type;
+    }
+
+    public void setType(TypeRessource type) {
+        this.type = type;
+    }
+
+    public Allocation(String myName, TypeRessource type) {
+        this.myName = myName;
+        this.type = type;
+    }
+        
+    public String getMyName() {
+        return myName;
+    }
+
+    public void setMyName(String myName) {
+        this.myName = myName;
+    }
+}
