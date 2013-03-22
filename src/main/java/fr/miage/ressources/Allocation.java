@@ -1,5 +1,9 @@
 package fr.miage.ressources;
 
+/**
+ * 
+ * @author E12B336Z
+ */
 public class Allocation {
 	private String myName; 
         private TypeRessource type;

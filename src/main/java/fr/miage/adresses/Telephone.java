@@ -1,5 +1,8 @@
 package fr.miage.adresses;
-
+/**
+ * 
+ * @author E12B336Z
+ */
 public class Telephone {
 
 	private String num;

@@ -11,6 +11,10 @@ import fr.miage.adresses.PaysAdresse;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * 
+ * @author E12B336Z
+ */
 public class Devise {
 
 	private String nom;
@@ -21,14 +25,30 @@ public class Devise {
 		this.myListePays = myListePays;
 	}
 
+        /**
+         * Ajoute le pays dans lequel la devise est présente
+         * @param pays 
+         */
 	public void ajouterPays(PaysAdresse pays){
 		myListePays.add(pays);
 	}
 	
+        /**
+         * Supprime unpays dans lequel la devise était présente
+         * @param pays 
+         */
 	public void supprimerPays(PaysAdresse pays){
 		myListePays.remove(pays);
 	}
 	
+        /**
+         * Convertit un montant dans une devise dé départ vers une devise d'arrivée
+         * La fonction retourne un objet Conversion contenant toutes les informations concernant la conversion
+         * @param taux
+         * @param deviseArr
+         * @param montantDep
+         * @return Conversion
+         */
 	public Conversion convertir(TauxDeConversion taux, Devise deviseArr, double montantDep){
 		
                 double montantArr = montantDep*taux.getTaux();
@@ -59,6 +79,11 @@ public class Devise {
         this.nom = nom;
     }
 
+    /**
+     * Retourne la liste des Pays dans lesquels la devise est présente. 
+     * La liste n'est pas modifiable
+     * @return List<PaysAdresse>
+     */
     public List<PaysAdresse> getMyListePays() {
         return Collections.unmodifiableList(myListePays);
     }

@@ -1,5 +1,9 @@
 package fr.miage.financier;
 
+/**
+ * 
+ * @author E12B336Z
+ */
 public class TauxDeConversion {
 	
 	private double taux;

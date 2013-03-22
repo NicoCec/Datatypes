@@ -1,5 +1,9 @@
 package fr.miage.adresses;
 
+/**
+ * 
+ * @author E12B336Z
+ */
 public class Email {
 
 	private String mail;

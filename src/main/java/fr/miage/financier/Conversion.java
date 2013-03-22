@@ -2,6 +2,10 @@ package fr.miage.financier;
 
 import fr.miage.temporel.DateTempo;
 
+/**
+ * 
+ * @author E12B336Z
+ */
 public class Conversion {
 
 	private double montantDepart;

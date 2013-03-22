@@ -1,5 +1,9 @@
 package fr.miage.temporel;
 
+/**
+ * 
+ * @author E12B336Z
+ */
 public class Heure {
     private int heureVar;
     private int minute;

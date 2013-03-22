@@ -3,7 +3,10 @@ package fr.miage.adresses;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+/**
+ * 
+ * @author E12B336Z
+ */
 public class Ville {
 	
 	private String nomV;
@@ -32,6 +35,10 @@ public class Ville {
         this.nomV = nomV;
     }
 
+    /**
+     * Retourne la liste des lieux de façon non modifiable
+     * @return List<Lieux>
+     */
     public List<Lieux> getLieux() {
         return Collections.unmodifiableList(lieux);
     }
@@ -39,11 +46,19 @@ public class Ville {
     public void setLieux(List<Lieux> lieux) {
         this.lieux = lieux;
     }
-
+    
+    /**
+     * Ajoute un lieu dans la ville
+     * @param lieu 
+     */
     public void addLieu(Lieux lieu){
         lieux.add(lieu);
     }
     
+    /**
+     * Supprime un lieu de la ville
+     * @param lieu 
+     */
     public void delLieu(Lieux lieu){
         lieux.remove(lieu);
     }

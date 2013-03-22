@@ -1,5 +1,9 @@
 package fr.miage.mesures;
 
+/**
+ * 
+ * @author E12B336Z
+ */
 public class Conversion {
 
 	private double myQuantiteDep;

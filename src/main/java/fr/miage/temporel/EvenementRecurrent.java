@@ -1,5 +1,8 @@
 package fr.miage.temporel;
-
+/**
+ * 
+ * @author E12B336Z
+ */
 public class EvenementRecurrent {
 	
 	private TypeEvenementRecurrent myType;

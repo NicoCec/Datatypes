@@ -1,5 +1,9 @@
 package fr.miage.adresses;
 
+/**
+ * 
+ * @author E12B336Z
+ */
 public class NomDomaine {
 
     private String adresseD;
