@@ -6,6 +6,14 @@
 
 package fr.miage;
 
+import fr.miage.adresses.Email;
+import fr.miage.adresses.Lieux;
+import fr.miage.adresses.NomDomaine;
+import fr.miage.adresses.NomUtilisateur;
+import fr.miage.adresses.PaysAdresse;
+import fr.miage.adresses.TypeLieux;
+import fr.miage.adresses.Ville;
+
 /**
  * Hello world!
  *
@@ -14,6 +22,16 @@ public class AppGenereted
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        NomDomaine nomDomaine = new NomDomaine("etu.univ-nantes.fr");
+        NomUtilisateur nomUtilisateur = new NomUtilisateur("nicolas.dufour");
+        Email email = new Email("nicolas.dufour@etu.univ-nantes.fr", nomDomaine, nomUtilisateur);
+        
+        
+        PaysAdresse france = new PaysAdresse("france");
+        Ville nantes = new Ville("Nantes");
+        
+        
+        Lieux lieux = new Lieux(TypeLieux.rue, "Michelet", 55);
+        
     }
 }

@@ -13,11 +13,13 @@ package fr.miage.adresses;
 public class Lieux {
 	
 	private TypeLieux type;
-	private Ville myVille;
-
-    public Lieux(TypeLieux type, Ville myVille) {
+        private String name;
+        private int numero;
+        
+    public Lieux(TypeLieux type, String name, int num) {
         this.type = type;
-        this.myVille = myVille;
+        this.name = name;
+        this.numero = num;
     }
         
     public TypeLieux getType() {
@@ -26,14 +28,6 @@ public class Lieux {
 
     public void setType(TypeLieux type) {
         this.type = type;
-    }
-
-    public Ville getMyVille() {
-        return myVille;
-    }
-
-    public void setMyVille(Ville myVille) {
-        this.myVille = myVille;
     }
 
 }

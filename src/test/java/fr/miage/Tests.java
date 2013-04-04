@@ -16,6 +16,8 @@ public class Tests {
     
     @Test
     public void nomMethode(){
+        System.out.println("Blabla");
         
+       
     }
 }

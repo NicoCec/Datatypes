@@ -17,20 +17,12 @@ public class Ville {
 	
 	private String nomV;
         private List<Lieux> lieux = new ArrayList<Lieux>();
-        private PaysAdresse pays;
 
-    public Ville(String nomV, PaysAdresse pays) {
+    public Ville(String nomV) {
         this.nomV = nomV;
-        this.pays = pays;
     }
 
-    public PaysAdresse getPays() {
-        return pays;
-    }
 
-    public void setPays(PaysAdresse pays) {
-        this.pays = pays;
-    }
 
         
     public String getNomV() {
