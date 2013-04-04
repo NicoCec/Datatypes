@@ -1,3 +1,7 @@
+/**
+ * Copyright (C) 2013-2013 Nicolas - version 1.0-SNAPSHOT - All rights reserved.
+ */
+
 package fr.miage.adresses;
 
 import java.util.ArrayList;
@@ -36,7 +40,7 @@ public class Ville {
     }
 
     /**
-     * Retourne la liste des lieux de façon non modifiable
+     * Retourn the unmodifiable list of places 
      * @return List<Lieux>
      */
     public List<Lieux> getLieux() {
@@ -48,7 +52,7 @@ public class Ville {
     }
     
     /**
-     * Ajoute un lieu dans la ville
+     * Add a places in the town
      * @param lieu 
      */
     public void addLieu(Lieux lieu){
@@ -56,7 +60,7 @@ public class Ville {
     }
     
     /**
-     * Supprime un lieu de la ville
+     * Delete a place in the town
      * @param lieu 
      */
     public void delLieu(Lieux lieu){

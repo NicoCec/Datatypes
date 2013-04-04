@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fr.miage</groupId>
@@ -7,11 +8,19 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>OCL</name>
+    <name>NPIE</name>
     <url>http://maven.apache.org</url>
-
+    <inceptionYear>2013</inceptionYear>
+    <organization>
+        <name>Miage</name>
+    </organization>
+    
+        
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <inceptionYear>2013</inceptionYear>
+        <copyrightOwner>Nicolas</copyrightOwner>
     </properties>
 
     <build>
@@ -29,9 +38,66 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.0</version>
-
             </plugin>
-            
+            <!-- Creating current year element -->
+            <plugin>
+                <groupId>org.codehaus.groovy.maven</groupId>
+                <artifactId>gmaven-plugin</artifactId>
+                <version>1.0</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>execute</goal>
+                        </goals>
+                        <configuration>
+                            <source>
+                                import java.util.Date
+                                import java.text.MessageFormat
+                                def vartimestamp = MessageFormat.format("{0,date,yyyy}", new Date())
+                                project.properties['currentYear'] = vartimestamp
+                            </source>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Adding header to file -->
+            <plugin>
+                <groupId>com.mycila.maven-license-plugin</groupId>
+                <artifactId>maven-license-plugin</artifactId>
+                <version>1.8.0</version>
+                <configuration>
+                    <!-- Template location -->
+                    <header>src/main/resources/fileHeader.txt</header>
+                    <properties>
+                        <!-- Values to be substituted in template -->
+                        <h_inceptionYear>${inceptionYear}</h_inceptionYear>
+                        <h_currentYear>${currentYear}</h_currentYear>
+                        <h_copyrightOwner>${copyrightOwner}</h_copyrightOwner>
+                        <h_version>${version}</h_version>
+                    </properties>
+                    <strictCheck>true</strictCheck>
+                    <excludes>
+                        <exclude>**/*.html</exclude>
+                        <exclude>**/*.xml</exclude>
+                        <exclude>**/*.txt</exclude>
+                        <exclude>**/*.ec</exclude>
+                        <exclude>**/*.log</exclude>
+                        <exclude>**/*.css</exclude>
+                        <exclude>**/*.js</exclude>
+                        <exclude>**/*.jsp</exclude>
+                        <exclude>**/*.md</exclude>
+                    </excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>format</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
   
@@ -66,12 +132,20 @@
             </plugin>
         </plugins>
     </reporting>
-
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+    
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.8.1</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -92,5 +166,7 @@
             <version>0.0.2</version>
             <scope>test</scope>
         </dependency>
+        
+      
     </dependencies>
 </project>

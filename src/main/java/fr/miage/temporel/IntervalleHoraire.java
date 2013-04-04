@@ -1,3 +1,7 @@
+/**
+ * Copyright (C) 2013-2013 Nicolas - version 1.0-SNAPSHOT - All rights reserved.
+ */
+
 package fr.miage.temporel;
 
 import java.util.ArrayList;
@@ -15,8 +19,8 @@ public class IntervalleHoraire {
         private List<EvenementRecurrent> evenementsRec = new ArrayList<EvenementRecurrent>();
 
     /**
-     * Retourne la liste des événements récurrents dans une liste non modifiable
-     * @return 
+     * Return the unmodifiable list of events
+     * @return list of events
      */
     public List<EvenementRecurrent> getEvenementsRec() {
         return Collections.unmodifiableList(evenementsRec);
@@ -48,7 +52,7 @@ public class IntervalleHoraire {
     }
 	
     /**
-     * Ajoute un événement récurrent à l'intervalle horaire
+     * Add an event to the current interval
      * @param evtRec 
      */
     public void addEvenementRec(EvenementRecurrent evtRec){
@@ -56,7 +60,7 @@ public class IntervalleHoraire {
     }
     
     /**
-     * Supprime un événement récurrent de l'intervalle horaire
+     * Delete an event from the current interval
      * @param evtRec 
      */
     public void delEvenementRec(EvenementRecurrent evtRec){

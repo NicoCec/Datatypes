@@ -1,3 +1,7 @@
+/**
+ * Copyright (C) 2013-2013 Nicolas - version 1.0-SNAPSHOT - All rights reserved.
+ */
+
 package fr.miage.adresses;
 
 import java.util.ArrayList;
@@ -17,7 +21,7 @@ public class PaysAdresse {
     }
 
     /**
-     * Ajoute un ville dans le pays
+     * Add a town in the country
      * @param ville 
      */
     public void addVille(Ville ville){
@@ -25,7 +29,7 @@ public class PaysAdresse {
     }
     
     /**
-     * Supprime une ville du pays
+     * Delete a town in the country
      * @param ville 
      */
     public void delVille(Ville ville){
@@ -41,7 +45,7 @@ public class PaysAdresse {
     }
 
     /**
-     * Retourne la liste des villes du pays, de façon non modifiable
+     * Return the unmodifiable list of towns in the country
      * @return List<Ville>
      */
     public List<Ville> getVilles() {

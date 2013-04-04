@@ -1,3 +1,7 @@
+/**
+ * Copyright (C) 2013-2013 Nicolas - version 1.0-SNAPSHOT - All rights reserved.
+ */
+
 package fr.miage.financier;
 
 import java.util.ArrayList;
@@ -26,7 +30,7 @@ public class Devise {
 	}
 
         /**
-         * Ajoute le pays dans lequel la devise est présente
+         * Add the country where is the currency
          * @param pays 
          */
 	public void ajouterPays(PaysAdresse pays){
@@ -34,7 +38,7 @@ public class Devise {
 	}
 	
         /**
-         * Supprime unpays dans lequel la devise était présente
+         * Delete a country where was a currency
          * @param pays 
          */
 	public void supprimerPays(PaysAdresse pays){
@@ -42,8 +46,9 @@ public class Devise {
 	}
 	
         /**
-         * Convertit un montant dans une devise dé départ vers une devise d'arrivée
-         * La fonction retourne un objet Conversion contenant toutes les informations concernant la conversion
+         * Convert an amount in a specific currency to an other currency.
+         * This function return a Conversion object, which contains all informations about this conversion
+
          * @param taux
          * @param deviseArr
          * @param montantDep
@@ -80,7 +85,7 @@ public class Devise {
     }
 
     /**
-     * Retourne la liste des Pays dans lesquels la devise est présente. 
+     * Return the list of country where is the currency.
      * La liste n'est pas modifiable
      * @return List<PaysAdresse>
      */

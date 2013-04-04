@@ -1,3 +1,7 @@
+/**
+ * Copyright (C) 2013-2013 Nicolas - version 1.0-SNAPSHOT - All rights reserved.
+ */
+
 package fr.miage.mesures;
 
 /**
@@ -30,8 +34,8 @@ public class Quantite {
     }
         
     /**
-     * Cette fonction convertit une quantité de départ ayant une unité spécifiée en une quantité d'arrivée ayant une unité spécifiée.
-     * Elle retourne un objet Conversion contenant toutes les informations de la conversion.
+     * Convert an amount in a specific unit of measure to an other unit 
+     * It returns a Conversion object, which contains all informations about this conversion
      * @param quantiteDep
      * @param uniteArr
      * @param facteurConv
