@@ -12,22 +12,12 @@ package fr.miage.adresses;
  */
 public class Email {
 
-	private String mail;
 	private NomDomaine myNomDomaine;
 	private NomUtilisateur myNomUtilisateur;
 
-    public Email(String mail, NomDomaine myNomDomaine, NomUtilisateur myNomUtilisateur) {
-        this.mail = mail;
+    public Email( NomDomaine myNomDomaine, NomUtilisateur myNomUtilisateur) {
         this.myNomDomaine = myNomDomaine;
         this.myNomUtilisateur = myNomUtilisateur;
-    }
-
-    public String getMail() {
-        return mail;
-    }
-
-    public void setMail(String mail) {
-        this.mail = mail;
     }
 
     public NomDomaine getMyNomDomaine() {

@@ -26,9 +26,8 @@ public class Devise {
 	private String nom;
 	private List<PaysAdresse> myListePays = new ArrayList<PaysAdresse>();
 	
-	public Devise(String nom, List<PaysAdresse> myListePays) {
+	public Devise(String nom) {
 		this.nom = nom;
-		this.myListePays = myListePays;
 	}
 
         /**

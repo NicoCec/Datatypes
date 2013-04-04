@@ -43,10 +43,10 @@ public class Quantite {
      * @param facteurConv
      * @return conversion
      */
-    public Conversion convertir(int quantiteDep, Unite uniteArr, FacteurConversion facteurConv){
+    public Conversion convertir(Unite uniteArr, FacteurConversion facteurConv){
         
-        double quantiteArr = quantiteDep * facteurConv.getMyFacteur();
+        double quantiteArr = myValeur * facteurConv.getMyFacteur();
         
-        return new Conversion(quantiteDep, quantiteArr, this.getUnite(), uniteArr);
+        return new Conversion(myValeur, quantiteArr, this.getUnite(), uniteArr);
     }
 }
