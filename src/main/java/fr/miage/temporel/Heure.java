@@ -44,5 +44,13 @@ public class Heure {
     public void setSeconde(int seconde) {
         this.seconde = seconde;
     }
-	
+    
+    /**
+     * 
+     * @return the hour of the day
+     */
+    @Override
+    public String toString(){
+        return heureVar+":"+minute+":"+seconde;
+    }
 }

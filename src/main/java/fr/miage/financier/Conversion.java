@@ -69,5 +69,16 @@ public class Conversion {
             this.deviseArrivee = deviseArrivee;
             this.dateConv = date;
     }
+    
+    /**
+     * 
+     * @return all the informations about the conversion
+     */
+    @Override
+    public String toString(){
+        return "la conversion de "+montantDepart+" "+deviseDepart.toString()
+                +" en "+ deviseArrivee.toString()+ " donne "+montantArrivee
+                + " le "+ dateConv.toString();
+    }
 	
 }

@@ -34,4 +34,8 @@ public class Allocation {
     public void setMyName(String myName) {
         this.myName = myName;
     }
+    
+    public String toString(){
+        return type.getType().name();
+    }
 }

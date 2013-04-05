@@ -36,4 +36,13 @@ public class Email {
         this.myNomUtilisateur = myNomUtilisateur;
     }
     
+    /**
+     * 
+     * @return the concatenated email address
+     */
+    @Override
+    public String toString(){
+        return myNomUtilisateur.getAdresseU()+"@"+myNomDomaine.getAdresseD();
+    }
+       
 }

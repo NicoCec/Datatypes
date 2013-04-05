@@ -41,7 +41,7 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.0</version>
             </plugin>
-            <!-- Creating current year element -->
+          <!-- Creating current year element -->
             <plugin>
                 <groupId>org.codehaus.groovy.maven</groupId>
                 <artifactId>gmaven-plugin</artifactId>

@@ -56,4 +56,12 @@ public class DateTempo {
         this.myHeure = myHeure;
     }
 	
+    /**
+     * 
+     * @return the date and the hour
+     */
+    @Override
+    public String toString(){
+        return jour+"/"+mois+"/"+annee+" à "+myHeure.toString();
+    }
 }

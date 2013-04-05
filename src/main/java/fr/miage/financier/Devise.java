@@ -97,4 +97,9 @@ public class Devise {
     public void setMyListePays(List<PaysAdresse> myListePays) {
         this.myListePays = myListePays;
     }
+
+    @Override
+    public String toString(){
+        return nom;
+    }
 }

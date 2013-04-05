@@ -56,5 +56,13 @@ public class Conversion {
         this.myUniteArr = myUniteArr;
     }
 	
-	
+    /**
+     * 
+     * @return all the informations about the conversion
+     */
+    @Override
+    public String toString(){
+        return "la conversion de "+myQuantiteDep+" "+myUniteDep.toString()
+                +" en "+ myUniteArr.toString()+ " donne "+myQuantiteArr;
+    }
 }

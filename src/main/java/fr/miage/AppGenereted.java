@@ -42,10 +42,10 @@ public class AppGenereted
         NomUtilisateur nomUtilisateur = new NomUtilisateur("nicolas.dufour");
        
         Email email = new Email(nomDomaine, nomUtilisateur);
-        System.out.println("adresse mail : "+email.getMyNomUtilisateur()+"@"+email.getMyNomDomaine());
+        System.out.println("adresse mail : "+email.toString());
         
         Telephone tel = new Telephone("0666666666");
-        System.out.println("numéro de téléphone : "+tel.getNum());
+        System.out.println("numéro de téléphone : "+tel.toString());
         
         PaysAdresse france = new PaysAdresse("france");
         Ville nantes = new Ville("Nantes");
@@ -74,8 +74,7 @@ public class AppGenereted
         
         Conversion convEuroDollar =null;
         convEuroDollar = euro.convertir(tauxEuroDollar, dollar, 10000);
-        System.out.println("montant de la conversion de "+convEuroDollar.getDeviseDepart().getNom()
-                +" en "+ convEuroDollar.getDeviseArrivee().getNom() +" :" + convEuroDollar.getMontantArrivee() );
+        System.out.println(convEuroDollar.toString());
         
         Unite metre = new Unite("mètre");
         Unite kmetre = new Unite("kilomètre");
@@ -83,12 +82,13 @@ public class AppGenereted
         
         FacteurConversion facteurMKm = new FacteurConversion(0.001);
         Quantite quantite = new Quantite(100, metre);
-        fr.miage.mesures.Conversion convMKm = quantite.convertir(metre, facteurMKm);
+        fr.miage.mesures.Conversion convMKm = quantite.convertir(kmetre, facteurMKm);
         System.out.println("nombre de kilomètres: " + convMKm.getMyQuantiteArr() );
+        System.out.println("nombre de kilomètres: " + convMKm.toString());
         
         TypeRessource ressMaterielle = new TypeRessource(TypeTempo.materielle);
         Allocation allocation = new Allocation("ordinateur", ressMaterielle);
-        System.out.println("type de l'allocation : "+allocation.getType());
+        System.out.println("type de l'allocation : "+allocation.toString());
         
         
         Heure heureReveil = new Heure(7, 0, 0);
@@ -96,8 +96,8 @@ public class AppGenereted
         DateTempo dateVacances = new DateTempo(30, 6, 2013, heureReveil);
         EvenementRecurrent evtRecur = new EvenementRecurrent(TypeEvenementRecurrent.quotidien, "réveil");
         IntervalleHoraire periodeScolaire = new IntervalleHoraire(dateRentree, dateVacances);
-        System.out.println("Récurrence de l'évenement : "+evtRecur.getMyType());
-        System.out.println("Rentrée des classes : "+periodeScolaire.getDateDebut());
+        System.out.println("Récurrence de l'évenement : "+evtRecur.toString());
+        System.out.println("Rentrée des classes le : "+periodeScolaire.getDateDebut().toString());
         
-    }
+     }
 }

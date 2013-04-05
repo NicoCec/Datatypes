@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <author>Nicolas Dufour</author>
+        <title>How to get the git project</title>
+    </properties>
+    <meta name="keyword" content="git, repository"/>
+    <body>
+        <section name="Git project">
+            <p>
+				The repository used to store our project is git (more informations on http://github.com/).<br />             
+				To get the project from git, you have to set git on your IDE. <br />
+				Then you can use this address : https://github.com/NicoCec/Datatypes.git.
+            </p>
+            
+        </section>
+    </body>
+</document>

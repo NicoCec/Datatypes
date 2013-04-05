@@ -49,4 +49,6 @@ public class Quantite {
         
         return new Conversion(myValeur, quantiteArr, this.getUnite(), uniteArr);
     }
+    
+    
 }

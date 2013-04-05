@@ -34,5 +34,9 @@ public class EvenementRecurrent {
     public void setMyNom(String myNom) {
         this.myNom = myNom;
     }
-	
+
+    @Override
+    public String toString(){
+        return myNom+" de type "+myType.name();
+    }
 }

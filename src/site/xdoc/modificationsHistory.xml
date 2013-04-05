@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <author>Nicolas Dufour</author>
+        <title>Modification history</title>
+    </properties>
+    <meta name="keyword" content="git, repository, history"/>
+    <body>
+        <section name="History">
+            <p>
+				You can see our commit through this <a href="https://github.com/NicoCec/Datatypes/commits/master.atom">link</a>
+            </p>
+            
+        </section>
+    </body>
+</document>

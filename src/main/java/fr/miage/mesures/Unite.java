@@ -26,4 +26,8 @@ public class Unite {
         this.myNom = myNom;
     }
 	
+    @Override
+    public String toString(){
+        return myNom;
+    }
 }

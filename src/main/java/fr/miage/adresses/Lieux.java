@@ -46,4 +46,8 @@ public class Lieux {
         this.numero = numero;
     }
 
+    @Override
+    public String toString(){
+        return numero+" "+type+" "+name;
+    }
 }

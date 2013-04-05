@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <author>Nicolas Dufour</author>
+        <title>Welcome</title>
+    </properties>
+    <meta name="keyword" content="welcome, java"/>
+    <body>
+        <section name="Welcome">
+           <p>
+				Welcome to our site. 
+				This site is about a project which is a library of classes-job for various domains. It contains classes, types - data and operations being able to concern these classes. <br />
+
+You can read these paragraphs to know how to get the project, to know which licenses are used and to have few reports about our code.<br />
+				We hope you will enjoy it!<br />
+
+				Nicolas and Cecile
+		   </p>
+        </section>
+    </body>
+</document>

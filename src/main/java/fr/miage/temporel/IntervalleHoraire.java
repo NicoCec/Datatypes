@@ -68,4 +68,10 @@ public class IntervalleHoraire {
     public void delEvenementRec(EvenementRecurrent evtRec){
         evenementsRec.remove(evtRec);
     }
+    
+    @Override
+    public String toString(){
+        return "date de début "+dateDebut.toString()
+                +"date de fin "+dateFin.toString();
+    }
 }
