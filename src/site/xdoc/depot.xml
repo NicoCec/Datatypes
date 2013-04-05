@@ -8,8 +8,8 @@
     <body>
         <section name="Git project">
             <p>
-				The repository used to store our project is git (more informations on http://github.com/).<br />             
-				To get the project from git, you have to set git on your IDE. <br />
+				The repository used to store our project is git (more informations on <a href="http://github.com/">http://github.com/</a>).<br />             
+				To get the project from git, you have to set git on your IDE. You can see this <a href="www.jberger.org/inf2015/material/github-netbeans.pdf">tutorial</a> to set github on netbeans <br />
 				Then you can use this address : https://github.com/NicoCec/Datatypes.git.
             </p>
             
