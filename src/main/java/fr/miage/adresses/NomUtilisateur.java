@@ -26,6 +26,9 @@ public class NomUtilisateur {
         this.adresseU = adresseU;
     }
 
-  
+     @Override
+    public String toString(){
+        return adresseU;
+    }
 
 }

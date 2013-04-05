@@ -41,7 +41,7 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.0</version>
             </plugin>
-          <!-- Creating current year element -->
+            <!-- Creating current year element -->
             <plugin>
                 <groupId>org.codehaus.groovy.maven</groupId>
                 <artifactId>gmaven-plugin</artifactId>
@@ -137,7 +137,72 @@
                 <artifactId>maven-jxr-plugin</artifactId>
                 <version>2.3</version>
             </plugin>
-            
+  
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-changelog-plugin</artifactId>
+                <version>2.2</version>
+                <reportSets>
+                    <reportSet>
+                        <id>dual-report</id>
+                        <configuration>
+                            <type>range</type>
+                            <range>30</range>
+                        </configuration>
+                        <reports>
+                            <report>changelog</report>
+                            <report>file-activity</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-changelog-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <systemProperties>
+                        <property>
+                            <name>maven.scm.perforce.clientspec.name</name>
+                            <value>your.perforce.clientspec.name</value>
+                        </property>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-changelog-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <type>tag</type>
+                    <tags>
+                        <tag implementation="java.lang.String">alpha-2</tag>
+                        <tag implementation="java.lang.String">alpha-3</tag>
+                    </tags>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-changelog-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <type>range</type>
+                    <range>30</range>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-changelog-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <type>date</type>
+                    <dates>
+                        <date implementation="java.lang.String">2013-04-01</date>
+                        <date implementation="java.lang.String">2013-04-01</date>
+                    </dates>
+                    <dateFormat>yyyy-MM-dd</dateFormat>
+                </configuration>
+            </plugin>
         </plugins>
     </reporting>
     <licenses>
@@ -246,6 +311,17 @@
             <artifactId>maven-license-plugin</artifactId>
             <version>1.4.0</version>
         </dependency>
-      
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-changelog-plugin</artifactId>
+            <version>2.2</version>
+        </dependency>
     </dependencies>
+    
+    <scm>
+        <connection>scm:git:https://github.com/NicoCec/Datatypes.git</connection>
+        <developerConnection>scm:git:https://github.com/NicoCec/Datatypes.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/NicoCec/Datatypes.git</url>
+    </scm>
 </project>

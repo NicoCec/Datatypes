@@ -26,4 +26,8 @@ public class NomDomaine {
         this.adresseD = adresseD;
     }
 
+    @Override
+    public String toString(){
+        return adresseD;
+    }
 }

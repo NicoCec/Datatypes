@@ -42,7 +42,7 @@ public class Email {
      */
     @Override
     public String toString(){
-        return myNomUtilisateur.getAdresseU()+"@"+myNomDomaine.getAdresseD();
+        return myNomUtilisateur.toString()+"@"+myNomDomaine.toString();
     }
        
 }
