@@ -4,7 +4,7 @@
  * Last modification 12-04-2013
  */
 
-package java.fr.miage.financier;
+package java.fr.miage.adresses;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -15,11 +15,11 @@ import org.junit.runners.Suite;
 
 /**
  *
- * @author E12B336Z
+ * @author E095440P
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({fr.miage.financier.DeviseTest.class, fr.miage.financier.TauxDeConversionTest.class, fr.miage.financier.ConversionTest.class})
-public class FinancierSuite {
+@Suite.SuiteClasses({fr.miage.adresses.TypeLieuxTest.class, fr.miage.adresses.LieuxTest.class, fr.miage.adresses.TelephoneTest.class, fr.miage.adresses.VilleTest.class, fr.miage.adresses.NomUtilisateurTest.class, fr.miage.adresses.EmailTest.class, fr.miage.adresses.NomDomaineTest.class, fr.miage.adresses.PaysAdresseTest.class})
+public class AdressesSuite {
 
     @BeforeClass
     public static void setUpClass() throws Exception {

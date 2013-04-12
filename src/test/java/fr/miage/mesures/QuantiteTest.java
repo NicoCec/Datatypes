@@ -1,7 +1,7 @@
 /**
  * License The Apache Software License, Version 2.0
  * Copyright (C) 2013-2013 Nicolas - version 1.0-SNAPSHOT - All rights reserved.
- * Last modification 05-04-2013
+ * Last modification 12-04-2013
  */
 
 package fr.miage.mesures;
@@ -18,6 +18,13 @@ import static org.junit.Assert.*;
  * @author E12B336Z
  */
 public class QuantiteTest {
+    
+    private Quantite q1 = new Quantite(0, null);
+    
+    private int myValeur;
+    private Unite u1 = new Unite("kg");
+    private Unite u2 = new Unite("g");
+    private FacteurConversion f1 = new FacteurConversion(10.0);
     
     public QuantiteTest() {
     }
@@ -41,8 +48,8 @@ public class QuantiteTest {
     /**
      * Test of getUnite method, of class Quantite.
      */
-    @Test
-    public void testGetUnite() {
+    //@Test
+    /*public void testGetUnite() {
         System.out.println("getUnite");
         Quantite instance = null;
         Unite expResult = null;
@@ -50,26 +57,26 @@ public class QuantiteTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of setUnite method, of class Quantite.
      */
-    @Test
-    public void testSetUnite() {
+    //@Test
+    /*public void testSetUnite() {
         System.out.println("setUnite");
         Unite unite = null;
         Quantite instance = null;
         instance.setUnite(unite);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of getMyValeur method, of class Quantite.
      */
-    @Test
-    public void testGetMyValeur() {
+    //@Test
+    /*public void testGetMyValeur() {
         System.out.println("getMyValeur");
         Quantite instance = null;
         int expResult = 0;
@@ -77,34 +84,30 @@ public class QuantiteTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of setMyValeur method, of class Quantite.
      */
-    @Test
-    public void testSetMyValeur() {
+    //@Test
+    /*public void testSetMyValeur() {
         System.out.println("setMyValeur");
         int myValeur = 0;
         Quantite instance = null;
         instance.setMyValeur(myValeur);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of convertir method, of class Quantite.
      */
     @Test
     public void testConvertir() {
-        System.out.println("convertir");
-        Unite uniteArr = null;
-        FacteurConversion facteurConv = null;
-        Quantite instance = null;
-        Conversion expResult = null;
-        Conversion result = instance.convertir(uniteArr, facteurConv);
-        assertEquals(expResult, result);
+        q1.setMyValeur(10);
+        Conversion result=q1.convertir(u2, f1);
+        assertEquals(result.getMyQuantiteArr(), 100);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 }

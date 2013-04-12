@@ -1,7 +1,7 @@
 /**
  * License The Apache Software License, Version 2.0
  * Copyright (C) 2013-2013 Nicolas - version 1.0-SNAPSHOT - All rights reserved.
- * Last modification 05-04-2013
+ * Last modification 12-04-2013
  */
 
 package fr.miage.mesures;
@@ -18,6 +18,13 @@ import static org.junit.Assert.*;
  * @author E12B336Z
  */
 public class ConversionTest {
+    
+    private Unite u1 = new Unite("kg");
+    private Unite u2 = new Unite("g");
+    private Conversion c1 = new Conversion(0, 0, null, null);
+    private double myQuantiteDep;
+    private double myQuantiteArr;
+    
     
     public ConversionTest() {
     }
@@ -41,8 +48,8 @@ public class ConversionTest {
     /**
      * Test of getMyQuantiteDep method, of class Conversion.
      */
-    @Test
-    public void testGetMyQuantiteDep() {
+    //@Test
+    /*public void testGetMyQuantiteDep() {
         System.out.println("getMyQuantiteDep");
         Conversion instance = null;
         double expResult = 0.0;
@@ -50,26 +57,26 @@ public class ConversionTest {
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of setMyQuantiteDep method, of class Conversion.
      */
-    @Test
-    public void testSetMyQuantiteDep() {
+    //@Test
+    /*public void testSetMyQuantiteDep() {
         System.out.println("setMyQuantiteDep");
         double myQuantiteDep = 0.0;
         Conversion instance = null;
         instance.setMyQuantiteDep(myQuantiteDep);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of getMyQuantiteArr method, of class Conversion.
      */
-    @Test
-    public void testGetMyQuantiteArr() {
+    //@Test
+    /*public void testGetMyQuantiteArr() {
         System.out.println("getMyQuantiteArr");
         Conversion instance = null;
         double expResult = 0.0;
@@ -77,26 +84,26 @@ public class ConversionTest {
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of setMyQuantiteArr method, of class Conversion.
      */
-    @Test
-    public void testSetMyQuantiteArr() {
+    //@Test
+    /*public void testSetMyQuantiteArr() {
         System.out.println("setMyQuantiteArr");
         double myQuantiteArr = 0.0;
         Conversion instance = null;
         instance.setMyQuantiteArr(myQuantiteArr);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of getMyUniteDep method, of class Conversion.
      */
-    @Test
-    public void testGetMyUniteDep() {
+    //@Test
+    /*public void testGetMyUniteDep() {
         System.out.println("getMyUniteDep");
         Conversion instance = null;
         Unite expResult = null;
@@ -104,26 +111,26 @@ public class ConversionTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of setMyUniteDep method, of class Conversion.
      */
-    @Test
-    public void testSetMyUniteDep() {
+    //@Test
+    /*public void testSetMyUniteDep() {
         System.out.println("setMyUniteDep");
         Unite myUniteDep = null;
         Conversion instance = null;
         instance.setMyUniteDep(myUniteDep);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of getMyUniteArr method, of class Conversion.
      */
-    @Test
-    public void testGetMyUniteArr() {
+    //@Test
+    /*public void testGetMyUniteArr() {
         System.out.println("getMyUniteArr");
         Conversion instance = null;
         Unite expResult = null;
@@ -131,32 +138,32 @@ public class ConversionTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of setMyUniteArr method, of class Conversion.
      */
-    @Test
-    public void testSetMyUniteArr() {
+    //@Test
+    /*public void testSetMyUniteArr() {
         System.out.println("setMyUniteArr");
         Unite myUniteArr = null;
         Conversion instance = null;
         instance.setMyUniteArr(myUniteArr);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of toString method, of class Conversion.
      */
     @Test
     public void testToString() {
-        System.out.println("toString");
-        Conversion instance = null;
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
+        c1.setMyQuantiteArr(20);
+        c1.setMyQuantiteDep(10);
+        c1.setMyUniteArr(u1);
+        c1.setMyUniteDep(u2);
+        assertEquals(c1.toString(), "la conversion de 10.0 g en kg donne 20.0");
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 }
