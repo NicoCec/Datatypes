@@ -1,3 +1,4 @@
 License ${h_license}
 Copyright (C) ${h_inceptionYear}-${h_currentYear} ${h_copyrightOwner} - version ${h_version} - All rights reserved.
 Last modification ${h_modification}
+identifiant : ${git.commit.id}
