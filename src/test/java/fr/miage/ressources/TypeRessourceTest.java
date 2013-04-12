@@ -41,27 +41,27 @@ public class TypeRessourceTest {
     /**
      * Test of getType method, of class TypeRessource.
      */
-    @Test
+    //@Test
     public void testGetType() {
-        System.out.println("getType");
+       /* System.out.println("getType");
         TypeRessource instance = null;
         TypeTempo expResult = null;
         TypeTempo result = instance.getType();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of setType method, of class TypeRessource.
      */
-    @Test
+    //@Test
     public void testSetType() {
-        System.out.println("setType");
+       /* System.out.println("setType");
         TypeTempo type = null;
         TypeRessource instance = null;
         instance.setType(type);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }

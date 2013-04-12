@@ -41,27 +41,27 @@ public class NomDomaineTest {
     /**
      * Test of getAdresseD method, of class NomDomaine.
      */
-    @Test
+   // @Test
     public void testGetAdresseD() {
-        System.out.println("getAdresseD");
+        /*System.out.println("getAdresseD");
         NomDomaine instance = null;
         String expResult = "";
         String result = instance.getAdresseD();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of setAdresseD method, of class NomDomaine.
      */
-    @Test
+    //@Test
     public void testSetAdresseD() {
-        System.out.println("setAdresseD");
+       /* System.out.println("setAdresseD");
         String adresseD = "";
         NomDomaine instance = null;
         instance.setAdresseD(adresseD);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }

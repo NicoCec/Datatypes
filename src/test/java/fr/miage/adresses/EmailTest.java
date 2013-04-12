@@ -41,35 +41,31 @@ public class EmailTest {
     /**
      * Test of getMyNomDomaine method, of class Email.
      */
-    @Test
-    public void testGetMyNomDomaine() {
+    //@Test
+    /*public void testGetMyNomDomaine() {
         System.out.println("getMyNomDomaine");
-        //Email instance = null;
-        //NomDomaine expResult = null;
-        //NomDomaine result = instance.getMyNomDomaine();
-        assertEquals("etu.univ-nantes.fr", "etu.univ-nantes.fr");
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of setMyNomDomaine method, of class Email.
      */
-    @Test
-    public void testSetMyNomDomaine() {
+    //@Test
+    /*public void testSetMyNomDomaine() {
         System.out.println("setMyNomDomaine");
         NomDomaine myNomDomaine = null;
         Email instance = null;
         instance.setMyNomDomaine(myNomDomaine);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of getMyNomUtilisateur method, of class Email.
      */
-    @Test
-    public void testGetMyNomUtilisateur() {
+    //@Test
+    /*public void testGetMyNomUtilisateur() {
         System.out.println("getMyNomUtilisateur");
         Email instance = null;
         NomUtilisateur expResult = null;
@@ -77,32 +73,28 @@ public class EmailTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of setMyNomUtilisateur method, of class Email.
      */
-    @Test
-    public void testSetMyNomUtilisateur() {
-        System.out.println("setMyNomUtilisateur");
+    //@Test
+     /*public void testSetMyNomUtilisateur() {
+       System.out.println("setMyNomUtilisateur");
         NomUtilisateur myNomUtilisateur = null;
         Email instance = null;
         instance.setMyNomUtilisateur(myNomUtilisateur);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of toString method, of class Email.
      */
-    @Test
-    public void testToString() {
+    //@Test
+    /*public void testToString() {
         System.out.println("toString");
-        //Email instance = null;
-        //String expResult = myNomUtilisateur.toString()+"@"+myNomDomaine.toString();
-        //String result = myNomUtilisateur.toString()+"@"+myNomDomaine.toString();
-        //assertEquals(expResult, Email.toString());
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 }

@@ -19,6 +19,10 @@ import static org.junit.Assert.*;
  * @author E12B336Z
  */
 public class VilleTest {
+    private Ville paris;
+    private Ville berlin;
+    private Lieux menard;
+    private Lieux loquidy;
     
     public VilleTest() {
     }
@@ -33,6 +37,11 @@ public class VilleTest {
     
     @Before
     public void setUp() {
+        paris = new Ville("Paris");
+        berlin = new Ville("Berlin");
+        
+        menard = new Lieux(TypeLieux.rue, "Amédée Ménard", 33);
+        loquidy = new Lieux(TypeLieux.rue, "Loquidy", 12);
     }
     
     @After
@@ -42,55 +51,55 @@ public class VilleTest {
     /**
      * Test of getNomV method, of class Ville.
      */
-    @Test
+    //@Test
     public void testGetNomV() {
-        System.out.println("getNomV");
+        /*System.out.println("getNomV");
         Ville instance = null;
         String expResult = "";
         String result = instance.getNomV();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of setNomV method, of class Ville.
      */
-    @Test
+    //@Test
     public void testSetNomV() {
-        System.out.println("setNomV");
+        /*System.out.println("setNomV");
         String nomV = "";
         Ville instance = null;
         instance.setNomV(nomV);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of getLieux method, of class Ville.
      */
-    @Test
+    //@Test
     public void testGetLieux() {
-        System.out.println("getLieux");
+       /* System.out.println("getLieux");
         Ville instance = null;
         List expResult = null;
         List result = instance.getLieux();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of setLieux method, of class Ville.
      */
-    @Test
+    //@Test
     public void testSetLieux() {
-        System.out.println("setLieux");
+       /* System.out.println("setLieux");
         List<Lieux> lieux = null;
         Ville instance = null;
         instance.setLieux(lieux);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -99,11 +108,19 @@ public class VilleTest {
     @Test
     public void testAddLieu() {
         System.out.println("addLieu");
-        Lieux lieu = null;
-        Ville instance = null;
-        instance.addLieu(lieu);
+        
+        assertTrue(paris.getLieux().isEmpty());
+        
+        paris.addLieu(menard);
+        berlin.addLieu(loquidy);
+        
+        assertFalse(paris.equals(berlin));
+        assertTrue (paris.equals(paris));
+        assertTrue (berlin.equals(berlin));
+        assertTrue(paris.getLieux().get(0).equals(menard));
+        assertTrue(paris.getLieux().size() == 1);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -112,10 +129,13 @@ public class VilleTest {
     @Test
     public void testDelLieu() {
         System.out.println("delLieu");
-        Lieux lieu = null;
-        Ville instance = null;
-        instance.delLieu(lieu);
+        paris.addLieu(menard);
+        paris.delLieu(menard);
+        
+        assertTrue(paris.getLieux().isEmpty());
+        assertTrue (paris.equals(paris));
+        
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 }

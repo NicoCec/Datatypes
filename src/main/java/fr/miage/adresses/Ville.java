@@ -60,4 +60,5 @@ public class Ville {
     public void delLieu(Lieux lieu){
         lieux.remove(lieu);
     }
+  
 }

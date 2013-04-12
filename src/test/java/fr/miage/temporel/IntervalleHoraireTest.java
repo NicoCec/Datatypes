@@ -20,6 +20,15 @@ import static org.junit.Assert.*;
  */
 public class IntervalleHoraireTest {
     
+    private EvenementRecurrent reveil;
+    private IntervalleHoraire periodeScolaire;
+    
+    private DateTempo dateRentree;
+    private DateTempo dateVacances;
+    
+    
+    private Heure h_reveil;
+    
     public IntervalleHoraireTest() {
     }
     
@@ -33,6 +42,12 @@ public class IntervalleHoraireTest {
     
     @Before
     public void setUp() {
+        h_reveil = new Heure(7, 00, 00);
+        
+        dateRentree = new DateTempo(1, 9, 2012, h_reveil);
+        dateVacances = new DateTempo(30, 6, 2013, h_reveil);
+        reveil = new EvenementRecurrent(TypeEvenementRecurrent.quotidien, "reveil");
+        periodeScolaire = new IntervalleHoraire(dateRentree, dateVacances);
     }
     
     @After
@@ -42,82 +57,82 @@ public class IntervalleHoraireTest {
     /**
      * Test of getEvenementsRec method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testGetEvenementsRec() {
-        System.out.println("getEvenementsRec");
+     /*   System.out.println("getEvenementsRec");
         IntervalleHoraire instance = null;
         List expResult = null;
         List result = instance.getEvenementsRec();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of setEvenementsRec method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testSetEvenementsRec() {
-        System.out.println("setEvenementsRec");
+      /*  System.out.println("setEvenementsRec");
         List<EvenementRecurrent> evenementsRec = null;
         IntervalleHoraire instance = null;
         instance.setEvenementsRec(evenementsRec);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of getDateDebut method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testGetDateDebut() {
-        System.out.println("getDateDebut");
+       /* System.out.println("getDateDebut");
         IntervalleHoraire instance = null;
         DateTempo expResult = null;
         DateTempo result = instance.getDateDebut();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of setDateDebut method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testSetDateDebut() {
-        System.out.println("setDateDebut");
+      /*  System.out.println("setDateDebut");
         DateTempo dateDebut = null;
         IntervalleHoraire instance = null;
         instance.setDateDebut(dateDebut);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of getDateFin method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testGetDateFin() {
-        System.out.println("getDateFin");
+       /* System.out.println("getDateFin");
         IntervalleHoraire instance = null;
         DateTempo expResult = null;
         DateTempo result = instance.getDateFin();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of setDateFin method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testSetDateFin() {
-        System.out.println("setDateFin");
+      /*  System.out.println("setDateFin");
         DateTempo dateFin = null;
         IntervalleHoraire instance = null;
         instance.setDateFin(dateFin);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -126,11 +141,10 @@ public class IntervalleHoraireTest {
     @Test
     public void testAddEvenementRec() {
         System.out.println("addEvenementRec");
-        EvenementRecurrent evtRec = null;
-        IntervalleHoraire instance = null;
-        instance.addEvenementRec(evtRec);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertTrue(periodeScolaire.getEvenementsRec().isEmpty());
+        periodeScolaire.addEvenementRec(reveil);
+        assertEquals(periodeScolaire, periodeScolaire);
+        assertTrue(periodeScolaire.getEvenementsRec().size()==1);
     }
 
     /**
@@ -139,24 +153,24 @@ public class IntervalleHoraireTest {
     @Test
     public void testDelEvenementRec() {
         System.out.println("delEvenementRec");
-        EvenementRecurrent evtRec = null;
-        IntervalleHoraire instance = null;
-        instance.delEvenementRec(evtRec);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        periodeScolaire.addEvenementRec(reveil);
+        assertTrue(periodeScolaire.getEvenementsRec().size()==1);
+        periodeScolaire.delEvenementRec(reveil);
+        assertEquals(periodeScolaire, periodeScolaire);
+        assertTrue(periodeScolaire.getEvenementsRec().isEmpty());
     }
 
     /**
      * Test of toString method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testToString() {
-        System.out.println("toString");
+      /*  System.out.println("toString");
         IntervalleHoraire instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }

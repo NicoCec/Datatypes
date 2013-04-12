@@ -41,27 +41,27 @@ public class TypeEvenementRecurrentTest {
     /**
      * Test of values method, of class TypeEvenementRecurrent.
      */
-    @Test
+    //@Test
     public void testValues() {
-        System.out.println("values");
+     /*   System.out.println("values");
         TypeEvenementRecurrent[] expResult = null;
         TypeEvenementRecurrent[] result = TypeEvenementRecurrent.values();
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of valueOf method, of class TypeEvenementRecurrent.
      */
-    @Test
+    //@Test
     public void testValueOf() {
-        System.out.println("valueOf");
+     /*   System.out.println("valueOf");
         String name = "";
         TypeEvenementRecurrent expResult = null;
         TypeEvenementRecurrent result = TypeEvenementRecurrent.valueOf(name);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }

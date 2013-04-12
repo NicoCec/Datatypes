@@ -6,6 +6,7 @@
 
 package fr.miage.adresses;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -20,7 +21,13 @@ import static org.junit.Assert.*;
  */
 public class PaysAdresseTest {
     
+    PaysAdresse france;
+    PaysAdresse allemagne;
+    private Ville paris;
+    private Ville berlin;
+    
     public PaysAdresseTest() {
+        
     }
     
     @BeforeClass
@@ -33,6 +40,11 @@ public class PaysAdresseTest {
     
     @Before
     public void setUp() {
+        france = new PaysAdresse("France");
+        allemagne = new PaysAdresse("Allemagne");
+        
+        paris = new Ville("Paris");
+        berlin = new Ville("Berlin");
     }
     
     @After
@@ -45,11 +57,16 @@ public class PaysAdresseTest {
     @Test
     public void testAddVille() {
         System.out.println("addVille");
-        Ville ville = null;
-        PaysAdresse instance = null;
-        instance.addVille(ville);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertTrue(france.getVilles().isEmpty());
+        
+        france.addVille(paris);
+        allemagne.addVille(berlin);
+        
+        assertFalse(france.equals(allemagne));
+        assertTrue (france.equals(france));
+        assertTrue (allemagne.equals(allemagne));
+        assertTrue(france.getVilles().get(0).equals(paris));
+        assertTrue(france.getVilles().size() == 1);
     }
 
     /**
@@ -58,64 +75,64 @@ public class PaysAdresseTest {
     @Test
     public void testDelVille() {
         System.out.println("delVille");
-        Ville ville = null;
-        PaysAdresse instance = null;
-        instance.delVille(ville);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        france.addVille(paris);
+        france.delVille(paris);
+        
+        assertTrue(france.getVilles().isEmpty());
+        assertTrue (france.equals(france));
     }
 
     /**
      * Test of getNomP method, of class PaysAdresse.
      */
-    @Test
+    //@Test
     public void testGetNomP() {
-        System.out.println("getNomP");
+       /* System.out.println("getNomP");
         PaysAdresse instance = null;
         String expResult = "";
         String result = instance.getNomP();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of setNomP method, of class PaysAdresse.
      */
-    @Test
+    //@Test
     public void testSetNomP() {
-        System.out.println("setNomP");
+        /*System.out.println("setNomP");
         String nomP = "";
         PaysAdresse instance = null;
         instance.setNomP(nomP);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of getVilles method, of class PaysAdresse.
      */
-    @Test
+   // @Test
     public void testGetVilles() {
-        System.out.println("getVilles");
+        /*System.out.println("getVilles");
         PaysAdresse instance = null;
         List expResult = null;
         List result = instance.getVilles();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
      * Test of setVilles method, of class PaysAdresse.
      */
-    @Test
+    //@Test
     public void testSetVilles() {
-        System.out.println("setVilles");
+        /*System.out.println("setVilles");
         List<Ville> villes = null;
         PaysAdresse instance = null;
         instance.setVilles(villes);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }
