@@ -1,7 +1,7 @@
 /**
  * License The Apache Software License, Version 2.0
  * Copyright (C) 2013-2013 Nicolas - version 1.0-SNAPSHOT - All rights reserved.
- * Last modification 05-04-2013
+ * Last modification 12-04-2013
  */
 
 package fr.miage.temporel;
@@ -41,7 +41,7 @@ public class EvenementRecurrentTest {
     /**
      * Test of getMyType method, of class EvenementRecurrent.
      */
-    @Test
+    //@Test
     public void testGetMyType() {
         System.out.println("getMyType");
         EvenementRecurrent instance = null;
@@ -55,7 +55,7 @@ public class EvenementRecurrentTest {
     /**
      * Test of setMyType method, of class EvenementRecurrent.
      */
-    @Test
+    //@Test
     public void testSetMyType() {
         System.out.println("setMyType");
         TypeEvenementRecurrent myType = null;
@@ -68,7 +68,7 @@ public class EvenementRecurrentTest {
     /**
      * Test of getMyNom method, of class EvenementRecurrent.
      */
-    @Test
+    //@Test
     public void testGetMyNom() {
         System.out.println("getMyNom");
         EvenementRecurrent instance = null;
@@ -82,7 +82,7 @@ public class EvenementRecurrentTest {
     /**
      * Test of setMyNom method, of class EvenementRecurrent.
      */
-    @Test
+    //@Test
     public void testSetMyNom() {
         System.out.println("setMyNom");
         String myNom = "";
@@ -95,7 +95,7 @@ public class EvenementRecurrentTest {
     /**
      * Test of toString method, of class EvenementRecurrent.
      */
-    @Test
+    //@Test
     public void testToString() {
         System.out.println("toString");
         EvenementRecurrent instance = null;

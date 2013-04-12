@@ -1,7 +1,7 @@
 /**
  * License The Apache Software License, Version 2.0
  * Copyright (C) 2013-2013 Nicolas - version 1.0-SNAPSHOT - All rights reserved.
- * Last modification 05-04-2013
+ * Last modification 12-04-2013
  */
 
 package fr.miage;
@@ -42,7 +42,8 @@ public class AppGenereted
         NomUtilisateur nomUtilisateur = new NomUtilisateur("nicolas.dufour");
        
         Email email = new Email(nomDomaine, nomUtilisateur);
-        System.out.println("adresse mail : "+email.toString());
+        System.out.print("adresse mail : ");
+        System.out.println(email.toString());
         
         Telephone tel = new Telephone("0666666666");
         System.out.println("numéro de téléphone : "+tel.toString());
@@ -96,7 +97,8 @@ public class AppGenereted
         DateTempo dateVacances = new DateTempo(30, 6, 2013, heureReveil);
         EvenementRecurrent evtRecur = new EvenementRecurrent(TypeEvenementRecurrent.quotidien, "réveil");
         IntervalleHoraire periodeScolaire = new IntervalleHoraire(dateRentree, dateVacances);
-        System.out.println("Récurrence de l'évenement : "+evtRecur.toString());
+        periodeScolaire.addEvenementRec(evtRecur);
+        System.out.println("Récurrence de l'évenement : "+periodeScolaire.getEvenementsRec().get(0).toString());
         System.out.println("Rentrée des classes le : "+periodeScolaire.getDateDebut().toString());
         
      }

@@ -1,7 +1,7 @@
 /**
  * License The Apache Software License, Version 2.0
  * Copyright (C) 2013-2013 Nicolas - version 1.0-SNAPSHOT - All rights reserved.
- * Last modification 05-04-2013
+ * Last modification 12-04-2013
  */
 
 package fr.miage.temporel;
@@ -20,6 +20,15 @@ import static org.junit.Assert.*;
  */
 public class IntervalleHoraireTest {
     
+    private EvenementRecurrent reveil;
+    private IntervalleHoraire periodeScolaire;
+    
+    private DateTempo dateRentree;
+    private DateTempo dateVacances;
+    
+    
+    private Heure h_reveil;
+    
     public IntervalleHoraireTest() {
     }
     
@@ -33,6 +42,12 @@ public class IntervalleHoraireTest {
     
     @Before
     public void setUp() {
+        h_reveil = new Heure(7, 00, 00);
+        
+        dateRentree = new DateTempo(1, 9, 2012, h_reveil);
+        dateVacances = new DateTempo(30, 6, 2013, h_reveil);
+        reveil = new EvenementRecurrent(TypeEvenementRecurrent.quotidien, "reveil");
+        periodeScolaire = new IntervalleHoraire(dateRentree, dateVacances);
     }
     
     @After
@@ -42,7 +57,7 @@ public class IntervalleHoraireTest {
     /**
      * Test of getEvenementsRec method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testGetEvenementsRec() {
         System.out.println("getEvenementsRec");
         IntervalleHoraire instance = null;
@@ -56,7 +71,7 @@ public class IntervalleHoraireTest {
     /**
      * Test of setEvenementsRec method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testSetEvenementsRec() {
         System.out.println("setEvenementsRec");
         List<EvenementRecurrent> evenementsRec = null;
@@ -69,7 +84,7 @@ public class IntervalleHoraireTest {
     /**
      * Test of getDateDebut method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testGetDateDebut() {
         System.out.println("getDateDebut");
         IntervalleHoraire instance = null;
@@ -83,7 +98,7 @@ public class IntervalleHoraireTest {
     /**
      * Test of setDateDebut method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testSetDateDebut() {
         System.out.println("setDateDebut");
         DateTempo dateDebut = null;
@@ -96,7 +111,7 @@ public class IntervalleHoraireTest {
     /**
      * Test of getDateFin method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testGetDateFin() {
         System.out.println("getDateFin");
         IntervalleHoraire instance = null;
@@ -110,7 +125,7 @@ public class IntervalleHoraireTest {
     /**
      * Test of setDateFin method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testSetDateFin() {
         System.out.println("setDateFin");
         DateTempo dateFin = null;
@@ -126,11 +141,10 @@ public class IntervalleHoraireTest {
     @Test
     public void testAddEvenementRec() {
         System.out.println("addEvenementRec");
-        EvenementRecurrent evtRec = null;
-        IntervalleHoraire instance = null;
-        instance.addEvenementRec(evtRec);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertTrue(periodeScolaire.getEvenementsRec().isEmpty());
+        periodeScolaire.addEvenementRec(reveil);
+        assertEquals(periodeScolaire, periodeScolaire);
+        assertTrue(periodeScolaire.getEvenementsRec().size()==1);
     }
 
     /**
@@ -139,17 +153,17 @@ public class IntervalleHoraireTest {
     @Test
     public void testDelEvenementRec() {
         System.out.println("delEvenementRec");
-        EvenementRecurrent evtRec = null;
-        IntervalleHoraire instance = null;
-        instance.delEvenementRec(evtRec);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        periodeScolaire.addEvenementRec(reveil);
+        assertTrue(periodeScolaire.getEvenementsRec().size()==1);
+        periodeScolaire.delEvenementRec(reveil);
+        assertEquals(periodeScolaire, periodeScolaire);
+        assertTrue(periodeScolaire.getEvenementsRec().isEmpty());
     }
 
     /**
      * Test of toString method, of class IntervalleHoraire.
      */
-    @Test
+    //@Test
     public void testToString() {
         System.out.println("toString");
         IntervalleHoraire instance = null;
