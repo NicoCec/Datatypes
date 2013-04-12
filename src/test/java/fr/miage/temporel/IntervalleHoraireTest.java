@@ -59,13 +59,13 @@ public class IntervalleHoraireTest {
      */
     //@Test
     public void testGetEvenementsRec() {
-        System.out.println("getEvenementsRec");
+     /*   System.out.println("getEvenementsRec");
         IntervalleHoraire instance = null;
         List expResult = null;
         List result = instance.getEvenementsRec();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -73,12 +73,12 @@ public class IntervalleHoraireTest {
      */
     //@Test
     public void testSetEvenementsRec() {
-        System.out.println("setEvenementsRec");
+      /*  System.out.println("setEvenementsRec");
         List<EvenementRecurrent> evenementsRec = null;
         IntervalleHoraire instance = null;
         instance.setEvenementsRec(evenementsRec);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -86,13 +86,13 @@ public class IntervalleHoraireTest {
      */
     //@Test
     public void testGetDateDebut() {
-        System.out.println("getDateDebut");
+       /* System.out.println("getDateDebut");
         IntervalleHoraire instance = null;
         DateTempo expResult = null;
         DateTempo result = instance.getDateDebut();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -100,12 +100,12 @@ public class IntervalleHoraireTest {
      */
     //@Test
     public void testSetDateDebut() {
-        System.out.println("setDateDebut");
+      /*  System.out.println("setDateDebut");
         DateTempo dateDebut = null;
         IntervalleHoraire instance = null;
         instance.setDateDebut(dateDebut);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -113,13 +113,13 @@ public class IntervalleHoraireTest {
      */
     //@Test
     public void testGetDateFin() {
-        System.out.println("getDateFin");
+       /* System.out.println("getDateFin");
         IntervalleHoraire instance = null;
         DateTempo expResult = null;
         DateTempo result = instance.getDateFin();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -127,12 +127,12 @@ public class IntervalleHoraireTest {
      */
     //@Test
     public void testSetDateFin() {
-        System.out.println("setDateFin");
+      /*  System.out.println("setDateFin");
         DateTempo dateFin = null;
         IntervalleHoraire instance = null;
         instance.setDateFin(dateFin);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -165,12 +165,12 @@ public class IntervalleHoraireTest {
      */
     //@Test
     public void testToString() {
-        System.out.println("toString");
+      /*  System.out.println("toString");
         IntervalleHoraire instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }

@@ -44,13 +44,13 @@ public class TelephoneTest {
      */
     //@Test
     public void testGetNum() {
-        System.out.println("getNum");
+      /*  System.out.println("getNum");
         Telephone instance = null;
         String expResult = "";
         String result = instance.getNum();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -58,12 +58,12 @@ public class TelephoneTest {
      */
     //@Test
     public void testSetNum() {
-        System.out.println("setNum");
+       /* System.out.println("setNum");
         String num = "";
         Telephone instance = null;
         instance.setNum(num);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -71,12 +71,12 @@ public class TelephoneTest {
      */
    // @Test
     public void testToString() {
-        System.out.println("toString");
+       /* System.out.println("toString");
        
         String expResult = "0666666666";
         
         assertEquals(expResult, num);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");*/
     }
 }

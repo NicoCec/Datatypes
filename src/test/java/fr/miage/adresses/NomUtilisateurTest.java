@@ -43,13 +43,13 @@ public class NomUtilisateurTest {
      */
     //@Test
     public void testGetAdresseU() {
-        System.out.println("getAdresseU");
+       /* System.out.println("getAdresseU");
         NomUtilisateur instance = null;
         String expResult = "";
         String result = instance.getAdresseU();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -57,11 +57,11 @@ public class NomUtilisateurTest {
      */
     //@Test
     public void testSetAdresseU() {
-        System.out.println("setAdresseU");
+        /*System.out.println("setAdresseU");
         String adresseU = "";
         NomUtilisateur instance = null;
         instance.setAdresseU(adresseU);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }

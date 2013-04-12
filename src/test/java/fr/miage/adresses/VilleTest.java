@@ -67,12 +67,12 @@ public class VilleTest {
      */
     //@Test
     public void testSetNomV() {
-        System.out.println("setNomV");
+        /*System.out.println("setNomV");
         String nomV = "";
         Ville instance = null;
         instance.setNomV(nomV);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -80,13 +80,13 @@ public class VilleTest {
      */
     //@Test
     public void testGetLieux() {
-        System.out.println("getLieux");
+       /* System.out.println("getLieux");
         Ville instance = null;
         List expResult = null;
         List result = instance.getLieux();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -94,12 +94,12 @@ public class VilleTest {
      */
     //@Test
     public void testSetLieux() {
-        System.out.println("setLieux");
+       /* System.out.println("setLieux");
         List<Lieux> lieux = null;
         Ville instance = null;
         instance.setLieux(lieux);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**

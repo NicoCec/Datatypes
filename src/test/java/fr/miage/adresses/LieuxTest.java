@@ -43,13 +43,13 @@ public class LieuxTest {
      */
    // @Test
     public void testGetType() {
-        System.out.println("getType");
+        /*System.out.println("getType");
         Lieux instance = null;
         TypeLieux expResult = null;
         TypeLieux result = instance.getType();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -57,12 +57,12 @@ public class LieuxTest {
      */
    // @Test
     public void testSetType() {
-        System.out.println("setType");
+       /* System.out.println("setType");
         TypeLieux type = null;
         Lieux instance = null;
         instance.setType(type);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -70,13 +70,13 @@ public class LieuxTest {
      */
    // @Test
     public void testGetName() {
-        System.out.println("getName");
+        /*System.out.println("getName");
         Lieux instance = null;
         String expResult = "";
         String result = instance.getName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -84,12 +84,12 @@ public class LieuxTest {
      */
    // @Test
     public void testSetName() {
-        System.out.println("setName");
+       /* System.out.println("setName");
         String name = "";
         Lieux instance = null;
         instance.setName(name);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -97,13 +97,13 @@ public class LieuxTest {
      */
    // @Test
     public void testGetNumero() {
-        System.out.println("getNumero");
+       /* System.out.println("getNumero");
         Lieux instance = null;
         int expResult = 0;
         int result = instance.getNumero();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -111,12 +111,12 @@ public class LieuxTest {
      */
    // @Test
     public void testSetNumero() {
-        System.out.println("setNumero");
+      /*  System.out.println("setNumero");
         int numero = 0;
         Lieux instance = null;
         instance.setNumero(numero);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -124,12 +124,12 @@ public class LieuxTest {
      */
     //@Test
     public void testToString() {
-        System.out.println("toString");
+        /*System.out.println("toString");
         Lieux instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }

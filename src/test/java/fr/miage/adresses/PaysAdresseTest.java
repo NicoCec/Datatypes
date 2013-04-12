@@ -87,13 +87,13 @@ public class PaysAdresseTest {
      */
     //@Test
     public void testGetNomP() {
-        System.out.println("getNomP");
+       /* System.out.println("getNomP");
         PaysAdresse instance = null;
         String expResult = "";
         String result = instance.getNomP();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -101,12 +101,12 @@ public class PaysAdresseTest {
      */
     //@Test
     public void testSetNomP() {
-        System.out.println("setNomP");
+        /*System.out.println("setNomP");
         String nomP = "";
         PaysAdresse instance = null;
         instance.setNomP(nomP);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -114,13 +114,13 @@ public class PaysAdresseTest {
      */
    // @Test
     public void testGetVilles() {
-        System.out.println("getVilles");
+        /*System.out.println("getVilles");
         PaysAdresse instance = null;
         List expResult = null;
         List result = instance.getVilles();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -128,11 +128,11 @@ public class PaysAdresseTest {
      */
     //@Test
     public void testSetVilles() {
-        System.out.println("setVilles");
+        /*System.out.println("setVilles");
         List<Ville> villes = null;
         PaysAdresse instance = null;
         instance.setVilles(villes);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }

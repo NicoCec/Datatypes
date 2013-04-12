@@ -43,13 +43,13 @@ public class EvenementRecurrentTest {
      */
     //@Test
     public void testGetMyType() {
-        System.out.println("getMyType");
+     /*   System.out.println("getMyType");
         EvenementRecurrent instance = null;
         TypeEvenementRecurrent expResult = null;
         TypeEvenementRecurrent result = instance.getMyType();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -57,12 +57,12 @@ public class EvenementRecurrentTest {
      */
     //@Test
     public void testSetMyType() {
-        System.out.println("setMyType");
+       /* System.out.println("setMyType");
         TypeEvenementRecurrent myType = null;
         EvenementRecurrent instance = null;
         instance.setMyType(myType);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -70,13 +70,13 @@ public class EvenementRecurrentTest {
      */
     //@Test
     public void testGetMyNom() {
-        System.out.println("getMyNom");
+      /*  System.out.println("getMyNom");
         EvenementRecurrent instance = null;
         String expResult = "";
         String result = instance.getMyNom();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -84,12 +84,12 @@ public class EvenementRecurrentTest {
      */
     //@Test
     public void testSetMyNom() {
-        System.out.println("setMyNom");
+    /*    System.out.println("setMyNom");
         String myNom = "";
         EvenementRecurrent instance = null;
         instance.setMyNom(myNom);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -97,12 +97,12 @@ public class EvenementRecurrentTest {
      */
     //@Test
     public void testToString() {
-        System.out.println("toString");
+      /*  System.out.println("toString");
         EvenementRecurrent instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }

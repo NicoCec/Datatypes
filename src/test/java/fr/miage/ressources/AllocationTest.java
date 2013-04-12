@@ -43,13 +43,13 @@ public class AllocationTest {
      */
     //@Test
     public void testGetType() {
-        System.out.println("getType");
+       /* System.out.println("getType");
         Allocation instance = null;
         TypeRessource expResult = null;
         TypeRessource result = instance.getType();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -57,12 +57,12 @@ public class AllocationTest {
      */
     //@Test
     public void testSetType() {
-        System.out.println("setType");
+       /* System.out.println("setType");
         TypeRessource type = null;
         Allocation instance = null;
         instance.setType(type);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -70,13 +70,13 @@ public class AllocationTest {
      */
     //@Test
     public void testGetMyName() {
-        System.out.println("getMyName");
+       /* System.out.println("getMyName");
         Allocation instance = null;
         String expResult = "";
         String result = instance.getMyName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -84,12 +84,12 @@ public class AllocationTest {
      */
     //@Test
     public void testSetMyName() {
-        System.out.println("setMyName");
+      /*  System.out.println("setMyName");
         String myName = "";
         Allocation instance = null;
         instance.setMyName(myName);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -97,12 +97,12 @@ public class AllocationTest {
      */
     //@Test
     public void testToString() {
-        System.out.println("toString");
+      /*  System.out.println("toString");
         Allocation instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }

@@ -43,13 +43,13 @@ public class HeureTest {
      */
     //@Test
     public void testGetHeureVar() {
-        System.out.println("getHeureVar");
+       /* System.out.println("getHeureVar");
         Heure instance = null;
         int expResult = 0;
         int result = instance.getHeureVar();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -57,12 +57,12 @@ public class HeureTest {
      */
     //@Test
     public void testSetHeureVar() {
-        System.out.println("setHeureVar");
+       /* System.out.println("setHeureVar");
         int heureVar = 0;
         Heure instance = null;
         instance.setHeureVar(heureVar);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -70,13 +70,13 @@ public class HeureTest {
      */
     //@Test
     public void testGetMinute() {
-        System.out.println("getMinute");
+       /* System.out.println("getMinute");
         Heure instance = null;
         int expResult = 0;
         int result = instance.getMinute();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -84,12 +84,12 @@ public class HeureTest {
      */
     //@Test
     public void testSetMinute() {
-        System.out.println("setMinute");
+        /*System.out.println("setMinute");
         int minute = 0;
         Heure instance = null;
         instance.setMinute(minute);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -97,13 +97,13 @@ public class HeureTest {
      */
     //@Test
     public void testGetSeconde() {
-        System.out.println("getSeconde");
+      /*  System.out.println("getSeconde");
         Heure instance = null;
         int expResult = 0;
         int result = instance.getSeconde();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -111,12 +111,12 @@ public class HeureTest {
      */
     //@Test
     public void testSetSeconde() {
-        System.out.println("setSeconde");
+       /* System.out.println("setSeconde");
         int seconde = 0;
         Heure instance = null;
         instance.setSeconde(seconde);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 
     /**
@@ -124,12 +124,12 @@ public class HeureTest {
      */
     //@Test
     public void testToString() {
-        System.out.println("toString");
+        /*System.out.println("toString");
         Heure instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        fail("The test case is a prototype.");*/
     }
 }
