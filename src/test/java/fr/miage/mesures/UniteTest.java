@@ -41,8 +41,8 @@ public class UniteTest {
     /**
      * Test of getMyNom method, of class Unite.
      */
-    @Test
-    public void testGetMyNom() {
+    //@Test
+    /*public void testGetMyNom() {
         System.out.println("getMyNom");
         Unite instance = null;
         String expResult = "";
@@ -50,26 +50,26 @@ public class UniteTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of setMyNom method, of class Unite.
      */
-    @Test
-    public void testSetMyNom() {
+    //@Test
+    /*public void testSetMyNom() {
         System.out.println("setMyNom");
         String myNom = "";
         Unite instance = null;
         instance.setMyNom(myNom);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of toString method, of class Unite.
      */
-    @Test
-    public void testToString() {
+    //@Test
+    /*public void testToString() {
         System.out.println("toString");
         Unite instance = null;
         String expResult = "";
@@ -77,5 +77,5 @@ public class UniteTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 }

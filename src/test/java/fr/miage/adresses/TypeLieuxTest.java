@@ -43,26 +43,26 @@ public class TypeLieuxTest {
      * Test of values method, of class TypeLieux.
      */
     //@Test
-    public void testValues() {
-        /*System.out.println("values");
+    /*public void testValues() {
+        System.out.println("values");
         TypeLieux[] expResult = null;
         TypeLieux[] result = TypeLieux.values();
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of valueOf method, of class TypeLieux.
      */
     //@Test
-    public void testValueOf() {
-        /*System.out.println("valueOf");
+    /*public void testValueOf() {
+        System.out.println("valueOf");
         String name = "";
         TypeLieux expResult = null;
         TypeLieux result = TypeLieux.valueOf(name);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 }
