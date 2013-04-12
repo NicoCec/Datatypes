@@ -27,7 +27,6 @@ public class DeviseTest {
     private Devise d2 = new Devise ("dollar");
     private PaysAdresse p1 = new PaysAdresse("france");
     private PaysAdresse p2 = new PaysAdresse("etats-unis");
-    private List<PaysAdresse> listePays = new ArrayList<PaysAdresse>();
     private TauxDeConversion taux = new TauxDeConversion(0.4564883);
     
     public DeviseTest() {

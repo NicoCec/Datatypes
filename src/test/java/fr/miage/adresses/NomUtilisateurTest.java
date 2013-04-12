@@ -43,26 +43,26 @@ public class NomUtilisateurTest {
      * Test of getAdresseU method, of class NomUtilisateur.
      */
     //@Test
-    public void testGetAdresseU() {
-       /* System.out.println("getAdresseU");
+    /*public void testGetAdresseU() {
+        System.out.println("getAdresseU");
         NomUtilisateur instance = null;
         String expResult = "";
         String result = instance.getAdresseU();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of setAdresseU method, of class NomUtilisateur.
      */
     //@Test
-    public void testSetAdresseU() {
-        /*System.out.println("setAdresseU");
+     /*public void testSetAdresseU() {
+       System.out.println("setAdresseU");
         String adresseU = "";
         NomUtilisateur instance = null;
         instance.setAdresseU(adresseU);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 }

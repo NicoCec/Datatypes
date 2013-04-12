@@ -43,26 +43,26 @@ public class TypeTempoTest {
      * Test of values method, of class TypeTempo.
      */
     //@Test
-    public void testValues() {
-        /*System.out.println("values");
+    /*public void testValues() {
+        System.out.println("values");
         TypeTempo[] expResult = null;
         TypeTempo[] result = TypeTempo.values();
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of valueOf method, of class TypeTempo.
      */
     //@Test
-    public void testValueOf() {
-       /* System.out.println("valueOf");
+    /*public void testValueOf() {
+        System.out.println("valueOf");
         String name = "";
         TypeTempo expResult = null;
         TypeTempo result = TypeTempo.valueOf(name);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 }

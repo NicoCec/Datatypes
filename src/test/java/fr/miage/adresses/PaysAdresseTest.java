@@ -87,53 +87,53 @@ public class PaysAdresseTest {
      * Test of getNomP method, of class PaysAdresse.
      */
     //@Test
-    public void testGetNomP() {
-       /* System.out.println("getNomP");
+    /*public void testGetNomP() {
+        System.out.println("getNomP");
         PaysAdresse instance = null;
         String expResult = "";
         String result = instance.getNomP();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of setNomP method, of class PaysAdresse.
      */
     //@Test
-    public void testSetNomP() {
-        /*System.out.println("setNomP");
+    /*public void testSetNomP() {
+        System.out.println("setNomP");
         String nomP = "";
         PaysAdresse instance = null;
         instance.setNomP(nomP);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of getVilles method, of class PaysAdresse.
      */
    // @Test
-    public void testGetVilles() {
-        /*System.out.println("getVilles");
+     /*public void testGetVilles() {
+       System.out.println("getVilles");
         PaysAdresse instance = null;
         List expResult = null;
         List result = instance.getVilles();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of setVilles method, of class PaysAdresse.
      */
     //@Test
-    public void testSetVilles() {
-        /*System.out.println("setVilles");
+    /*public void testSetVilles() {
+        System.out.println("setVilles");
         List<Ville> villes = null;
         PaysAdresse instance = null;
         instance.setVilles(villes);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 }

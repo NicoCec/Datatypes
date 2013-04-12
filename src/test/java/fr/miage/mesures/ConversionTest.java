@@ -22,7 +22,7 @@ public class ConversionTest {
     
     private Unite u1 = new Unite("kg");
     private Unite u2 = new Unite("g");
-    private Conversion c1 = new Conversion(0, 0, null, null);
+    private Conversion c1 = new Conversion(20, 10, u1, u2);
     private double myQuantiteDep;
     private double myQuantiteArr;
     
@@ -159,11 +159,7 @@ public class ConversionTest {
      */
     @Test
     public void testToString() {
-        c1.setMyQuantiteArr(20);
-        c1.setMyQuantiteDep(10);
-        c1.setMyUniteArr(u1);
-        c1.setMyUniteDep(u2);
-        assertEquals(c1.toString(), "la conversion de 10.0 g en kg donne 20.0");
+        assertEquals(c1.toString(), "la conversion de 20.0 kg en g donne 10.0");
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }

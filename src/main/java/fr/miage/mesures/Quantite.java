@@ -12,7 +12,7 @@ package fr.miage.mesures;
  * @author E12B336Z
  */
 public class Quantite {
-	private int myValeur;
+	private double myValeur;
         private Unite unite;
 
     public Quantite(int myValeur, Unite unite) {
@@ -28,7 +28,7 @@ public class Quantite {
         this.unite = unite;
     }
         
-    public int getMyValeur() {
+    public double getMyValeur() {
         return myValeur;
     }
 

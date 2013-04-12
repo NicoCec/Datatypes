@@ -53,55 +53,55 @@ public class VilleTest {
      * Test of getNomV method, of class Ville.
      */
     //@Test
-    public void testGetNomV() {
-        /*System.out.println("getNomV");
+    /*public void testGetNomV() {
+        System.out.println("getNomV");
         Ville instance = null;
         String expResult = "";
         String result = instance.getNomV();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of setNomV method, of class Ville.
      */
     //@Test
-    public void testSetNomV() {
-        /*System.out.println("setNomV");
+    /*public void testSetNomV() {
+        System.out.println("setNomV");
         String nomV = "";
         Ville instance = null;
         instance.setNomV(nomV);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of getLieux method, of class Ville.
      */
     //@Test
-    public void testGetLieux() {
-       /* System.out.println("getLieux");
+    /*public void testGetLieux() {
+        System.out.println("getLieux");
         Ville instance = null;
         List expResult = null;
         List result = instance.getLieux();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of setLieux method, of class Ville.
      */
     //@Test
-    public void testSetLieux() {
-       /* System.out.println("setLieux");
+    /*public void testSetLieux() {
+        System.out.println("setLieux");
         List<Lieux> lieux = null;
         Ville instance = null;
         instance.setLieux(lieux);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of addLieu method, of class Ville.

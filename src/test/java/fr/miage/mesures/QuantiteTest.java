@@ -16,16 +16,14 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author E12B336Z
+ * @author E095440P
  */
 public class QuantiteTest {
     
-    private Quantite q1 = new Quantite(0, null);
-    
-    private int myValeur;
     private Unite u1 = new Unite("kg");
     private Unite u2 = new Unite("g");
-    private FacteurConversion f1 = new FacteurConversion(10.0);
+    private FacteurConversion f1 = new FacteurConversion(10);
+    private Quantite q1 = new Quantite(10,u1);
     
     public QuantiteTest() {
     }
@@ -80,9 +78,9 @@ public class QuantiteTest {
     /*public void testGetMyValeur() {
         System.out.println("getMyValeur");
         Quantite instance = null;
-        int expResult = 0;
-        int result = instance.getMyValeur();
-        assertEquals(expResult, result);
+        double expResult = 0.0;
+        double result = instance.getMyValeur();
+        assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }*/
@@ -105,10 +103,7 @@ public class QuantiteTest {
      */
     @Test
     public void testConvertir() {
-        q1.setMyValeur(10);
-        Conversion result=q1.convertir(u2, f1);
-        assertEquals(result.getMyQuantiteArr(), 100);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        Conversion result = q1.convertir(u2, f1);
+        assertEquals(result.getMyQuantiteArr(), 100, 0);
     }
 }

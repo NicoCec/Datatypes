@@ -44,40 +44,40 @@ public class TelephoneTest {
      * Test of getNum method, of class Telephone.
      */
     //@Test
-    public void testGetNum() {
-      /*  System.out.println("getNum");
+     /*public void testGetNum() {
+       System.out.println("getNum");
         Telephone instance = null;
         String expResult = "";
         String result = instance.getNum();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of setNum method, of class Telephone.
      */
     //@Test
-    public void testSetNum() {
-       /* System.out.println("setNum");
+    /*public void testSetNum() {
+        System.out.println("setNum");
         String num = "";
         Telephone instance = null;
         instance.setNum(num);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");*/
-    }
+        fail("The test case is a prototype.");
+    }*/
 
     /**
      * Test of toString method, of class Telephone.
      */
    // @Test
-    public void testToString() {
-       /* System.out.println("toString");
+    /*public void testToString() {
+        System.out.println("toString");
        
         String expResult = "0666666666";
         
         assertEquals(expResult, num);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");*/
-    }
+        //fail("The test case is a prototype.");
+    }*/
 }
