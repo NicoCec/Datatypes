@@ -21,7 +21,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <inceptionYear>2013</inceptionYear>
-        <copyrightOwner>Nicolas</copyrightOwner>
+        <copyrightOwner>Nicolas, Cecile</copyrightOwner>
         <license>The Apache Software License, Version 2.0</license>
     </properties>
 
@@ -83,6 +83,7 @@
                 <configuration>
                     <!-- Template location -->
                     <header>src/main/resources/fileHeader.txt</header>
+                    <header2>src/main/resources/git.properties</header2>
                     <properties>
                         <!-- Values to be substituted in template -->
                         <h_inceptionYear>${inceptionYear}</h_inceptionYear>
@@ -425,7 +426,7 @@
     <scm>
         <connection>scm:git:https://github.com/NicoCec/Datatypes.git</connection>
         <developerConnection>scm:git:https://github.com/NicoCec/Datatypes.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>Rendu Projet</tag>
         <url>https://github.com/NicoCec/Datatypes.git</url>
     </scm>
 </project>
